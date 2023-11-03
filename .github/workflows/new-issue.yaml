@@ -21,8 +21,8 @@ jobs:
           COMMIT_URL: ${{ github.event.issue.commit_url }}
           CREATED_AT: ${{ github.event.issue.created_at }}          
         run: |
-          env | sort | grep -v TOKEN
-          pip install git+https://github.com/marcolardera/chatgpt-cli
+          # env | sort | grep -v TOKEN | grep -v KEY
+          pip3 install git+https://github.com/marcolardera/chatgpt-cli
 
           echo "
             You will assist by taking the input I give you, and outputting the number of characters in the input.
