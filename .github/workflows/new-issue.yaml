@@ -3,6 +3,7 @@ on:
     types:
       - opened
 
+# Issue event types: https://docs.github.com/en/rest/overview/issue-event-types?apiVersion=2022-11-28
 jobs:
   label_issue:
     runs-on: ubuntu-latest
@@ -10,5 +11,14 @@ jobs:
       - env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           ISSUE_URL: ${{ github.event.issue.html_url }}
+          ID: ${{ github.event.issue.id }}
+          NODE_ID: ${{ github.event.issue.node_id }}
+          URL: ${{ github.event.issue.url }}}
+          ACTOR: ${{ github.event.issue.actor }}
+          EVENT: ${{ github.event.issue.event }}
+          COMMIT_ID: ${{ github.event.issue.commit_id }}
+          COMMIT_URL: ${{ github.event.issue.commit_url }}
+          CREATED_AT: ${{ github.event.issue.created_at }}          
         run: |
+          env | grep -v TOKEN
           gh issue edit $ISSUE_URL --add-label "triage"
