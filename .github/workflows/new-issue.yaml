@@ -20,5 +20,5 @@ jobs:
           COMMIT_URL: ${{ github.event.issue.commit_url }}
           CREATED_AT: ${{ github.event.issue.created_at }}          
         run: |
-          env | grep -v TOKEN
+          env | sort | grep -v TOKEN
           gh issue edit $ISSUE_URL --add-label "triage"
