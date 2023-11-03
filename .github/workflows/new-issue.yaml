@@ -10,6 +10,7 @@ jobs:
     steps:
       - env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ISSUE_URL: ${{ github.event.issue.html_url }}
           ID: ${{ github.event.issue.id }}
           NODE_ID: ${{ github.event.issue.node_id }}
@@ -21,4 +22,11 @@ jobs:
           CREATED_AT: ${{ github.event.issue.created_at }}          
         run: |
           env | sort | grep -v TOKEN
+          pip install git+https://github.com/marcolardera/chatgpt-cli
+
+          echo "
+            You will assist by taking the input I give you, and outputting the number of characters in the input.
+          " > context.txt
+
+          gh issue view $ISSUE_URL | chatgpt-cli --context ./context.txt
           gh issue edit $ISSUE_URL --add-label "triage"
