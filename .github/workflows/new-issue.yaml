@@ -35,6 +35,7 @@ jobs:
             string.
               
             Here is the list of type labels, please choose a type label only from this list:
+              type/uncertain
               type/accessibility
               type/angular-2-react
               type/browser-compatibility
@@ -67,6 +68,7 @@ jobs:
               type/ux
 
             Here is the list of area labels, please choose an area label only from this list:
+              area/uncertain
               area/admin/user
               area/alerting
               area/alerting-legacy
