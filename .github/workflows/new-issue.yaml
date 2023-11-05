@@ -10,7 +10,22 @@ jobs:
     with:
       url: ${{ github.event.issue.html_url }}
       type: issue
-      prompt: "summarize the issue, briefly"
+      prompt: "
+        type/bug
+        type/feature
+        type/unknown
+        type/other
+        type/question
+        type/duplicate
+        type/invalid
+        type/wonfix
+        type/helpwanted
+        area/frontend
+        area/backend
+        area/docs
+        area/unknown
+        area/other"
     secrets:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       GH_TOKEN: ${{ secrets.TOKEN }}
+    
