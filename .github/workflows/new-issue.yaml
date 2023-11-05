@@ -28,7 +28,7 @@ jobs:
           repostory: moxious/chatgpt-cli-action
           path: chatgpt-cli-action
       - name: Auto Label Issue
-        uses: .github/workflows/main.yml
+        uses: moxious/chatgpt-cli-action/.github/workflows/main.yml
         id: auto_label
         env:
             OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
