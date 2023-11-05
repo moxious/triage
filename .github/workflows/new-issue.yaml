@@ -10,7 +10,7 @@ jobs:
     with:
       url: ${{ github.event.issue.html_url }}
       type: issue
-      promp: "summarize the issue, briefly"
+      prompt: "summarize the issue, briefly"
 
     secrets:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
