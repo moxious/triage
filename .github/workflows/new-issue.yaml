@@ -6,7 +6,7 @@ on:
 # Issue event types: https://docs.github.com/en/rest/overview/issue-event-types?apiVersion=2022-11-28
 jobs:
   ta:
-    uses: moxious/chatgpt-cli-action/.github/workflows/main.yml@test_action_job
+    uses: moxious/chatgpt-cli-action/.github/workflows/main.yml@main
     with:
       url: ${{ github.event.issue.html_url }}
       type: issue
