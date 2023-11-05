@@ -5,13 +5,14 @@ on:
 
 # Issue event types: https://docs.github.com/en/rest/overview/issue-event-types?apiVersion=2022-11-28
 jobs:
-  ta:
-    uses: moxious/chatgpt-cli-action/.github/workflows/label-issue.yml@main
-    with:
-      url: ${{ github.event.issue.html_url }}
-      type: issue
-      prompt: "summarize the issue, briefly"
-
-    secrets:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      GH_TOKEN: ${{ secrets.TOKEN }}
+  auto_triage_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: moxious/chatgpt-cli-action/.github/workflows/label-issue.yml@main
+        with:
+          url: ${{ github.event.issue.html_url }}
+          type: issue
+          prompt: "summarize the issue, briefly"
+        secrets:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GH_TOKEN: ${{ secrets.TOKEN }}
