@@ -1,0 +1,413 @@
+ConnectionsV1		#AEE446
+MAS		#007FFF
+Ticket#6845		#385334
+add to changelog		#b8f785
+add to what's new		#00FF00
+announcement		#E0A68B
+area/admin/user		#c7def8
+area/alerting	Grafana Alerting	#c5def5
+area/alerting-legacy	Legacy dashboard alerts, deprecated since 9.0	#c5def5
+area/alerting/compliance	Issues that are related to alert generator compliance	#C5DEF5
+area/alerting/evaluation	Issues when evaluating alerts	#c5def5
+area/alerting/notifications	Issues when sending alert notifications	#c5def5
+area/alerting/screenshots	Issues when seeing metrics when receiving alerts	#C5DEF5
+area/annotations		#c7def8
+area/auth		#c7def8
+area/auth/authproxy		#c7def8
+area/auth/ldap		#c7def8
+area/auth/oauth		#c7def8
+area/auth/rbac	Grafana role-based access control	#C5DEF5
+area/auth/saml		#c7def8
+area/auth/serviceaccount	Grafana service accounts	#C5DEF5
+area/backend		#c7def8
+area/backend/api		#c7def8
+area/backend/config		#c7def8
+area/backend/db		#c7def8
+area/backend/db/migration		#c7def8
+area/backend/db/mysql		#c7def8
+area/backend/db/postgres		#c7def8
+area/backend/db/sql	Back-end SQL database logic	#a9f9f7
+area/backend/db/sqlite		#c7def8
+area/backend/logging		#c7def8
+area/backend/plugins		#c7def8
+area/backend/security		#c7def8
+area/backend/user		#c7def8
+area/backend_srv		#c7def8
+area/configuration	For issues concerning configuring Grafana	#c7def8
+area/dashboard		#c7def8
+area/dashboard/data-links		#c7def8
+area/dashboard/drag-n-drop		#C61301
+area/dashboard/folders		#c7def8
+area/dashboard/history		#bfd4f2
+area/dashboard/import		#c7def8
+area/dashboard/links		#c5def5
+area/dashboard/previews		#bfd4f2
+area/dashboard/rows		#BFD4F2
+area/dashboard/schemas		#ef8bc5
+area/dashboard/scripted		#c7def8
+area/dashboard/snapshot		#c5def5
+area/dashboard/templating		#c7def8
+area/dashboard/timerange		#c7def8
+area/dashboard/timezone		#c7def8
+area/dashboards/panel		#BFD4F2
+area/dashgpt	Issues related to the dashgpt project	#fb9f5a
+area/data/export		#c7def8
+area/dataframe		#c7def8
+area/dataplane	Dataplane Project (Data type contract)	#c7def8
+area/datasource		#c7def8
+area/datasource/backend		#c5def5
+area/datasource/frontend		#c5def5
+area/datasource/proxy		#c5def5
+area/datatrails		#006b75
+area/dataviz	Anything that relates to Data Visualisation work but is not specific to one panel	#AC7962
+area/developer-portal	Issues relating to https://grafana.com/developers/ and its sub-sections	#C5DEF5
+area/devenv	developer environment related	#c7def8
+area/docker		#c5def5
+area/drag-n-drop		#AB211D
+area/editor		#c7def8
+area/explore		#c5def5
+area/expressions	Server Side Expressions (SSE)	#bfd4f2
+area/field/overrides		#c7def8
+area/frontend		#c7def8
+area/frontend/code-editor		#c7def8
+area/frontend/library-panels		#c7def8
+area/frontend/library-variables		#c7def8
+area/frontend/login	Issues related to login, changing password, reset password	#c7def8
+area/generativeAI	for issues that involve generative AI	#ED4033
+area/glue	Glue related issues	#c5def5
+area/grafana-cli		#bfd4f2
+area/grafana.com		#c5def5
+area/grafana/data		#c5def5
+area/grafana/e2e		#c5def5
+area/grafana/runtime		#c5def5
+area/grafana/toolkit		#c7def8
+area/grafana/ui	Issues that belong to components in the @grafana/ui library	#c5def5
+area/grpc-server		#6AE6AD
+area/http-server		#c7def8
+area/image-rendering		#c5def5
+area/imagestore		#c5def5
+area/instrumentation	instrumentation for Grafanas codebase.	#c5def5
+area/internationalization		#c7def8
+area/kindsys	Relates to the core kindsys framework	#c5def5
+area/legend		#ED71AD
+area/libraries		#B49EBC
+area/live		#c7def8
+area/logs		#c7def8
+area/mailing		#c5def5
+area/manage-dashboards		#DB9785
+area/meta-analytics		#c7def8
+area/mobile-support		#c5def5
+area/navigation		#c7def8
+area/panel-chrome		#C5DEF5
+area/panel/alertlist		#c5def5
+area/panel/annotation-list		#c5def5
+area/panel/barchart		#C5DEF5
+area/panel/bargauge		#c7def8
+area/panel/candlestick		#c7def8
+area/panel/canvas	Issues related to canvas panel	#6CC0E4
+area/panel/common		#c7def8
+area/panel/dashboard-list		#c5def5
+area/panel/data	Common panel data querying & processing	#c7def8
+area/panel/datagrid		#BFD4F2
+area/panel/edit		#c7def8
+area/panel/flame-graph		#c7def8
+area/panel/gauge		#c5def5
+area/panel/geomap		#c5def5
+area/panel/graph		#c7def8
+area/panel/heatmap		#c7def8
+area/panel/histogram		#c5def5
+area/panel/icon		#C0186F
+area/panel/infrastructure	Support architecture & infra for panels	#c5def5
+area/panel/logs		#c5def5
+area/panel/news		#c7def8
+area/panel/node-graph		#c5def5
+area/panel/piechart	Core pie chart visualization	#c7def8
+area/panel/singlestat		#c7def8
+area/panel/stat		#c7def8
+area/panel/state-timeline		#c7def8
+area/panel/status-history		#C5DEF5
+area/panel/support	Anything relating to the DataViz panel that allows bug reports or queries to support	#1d76db
+area/panel/table		#c7def8
+area/panel/text		#c5def5
+area/panel/timeseries	The main time series Graph panel	#c7def8
+area/panel/traceview		#c7def8
+area/panel/trend		#C5DEF5
+area/panel/xychart		#C5DEF5
+area/permissions		#c7def8
+area/playlist		#c5def5
+area/plugin-extensions		#c7def8
+area/plugins		#c7def8
+area/plugins-catalog		#BFD4F2
+area/plugins/app	App Plugins	#c7def8
+area/plugins/sandbox		#023F8E
+area/profiling		#c5def5
+area/provisioning		#c5def5
+area/public-dashboards		#C5DEF5
+area/query-editor		#8816C3
+area/recorded-queries	Issues in Recorded Queries	#C5DEF5
+area/resourcepicker		#95C177
+area/reusable-queries		#c7def8
+area/routing		#BFD4F2
+area/scenes		#1E9F0E
+area/schema	Related to canonical Grafana entity schemas	#C5DEF5
+area/search		#c7def8
+area/security		#bfd4f2
+area/short-url		#c7def8
+area/shortcuts		#c7def8
+area/stack		#BC660A
+area/storybook	Issues related to Storybook that displays components for Grafana UI	#c5def5
+area/streaming		#c5def5
+area/teams		#32F0C0
+area/templating/repeating	Repeating panels or rows	#bfd4f2
+area/text-formatting	issues to do with text formatting	#c7def8
+area/thema		#c7def8
+area/tooltip		#BD8287
+area/tracing		#c5def5
+area/transformations		#c7def8
+area/ui/theme		#c7def8
+area/units		#c5def5
+area/ux		#ccf1ff
+area/value-mapping		#C7DEF8
+backport	A backport PR	#b60205
+backport v10.0.x		#D93F0B
+backport v10.1.x		#D93F0B
+backport v10.2.x		#D93F0B
+backport v8.0.x	Mark PR for automatic backport to v8.0.x	#D93F0B
+backport v8.2.x	Mark PR for automatic backport to v8.2.x	#D93F0B
+backport v8.3.x	Mark PR for automatic backport to v8.3.x	#D93F0B
+backport v8.4.x	Mark PR for automatic backport to v8.4.x	#D93F0B
+backport v8.5.x	Mark PR for automatic backport to v8.5.x	#D93F0B
+backport v9.0.x		#d93f0b
+backport v9.1.x	Bot will automatically open backport PR	#d93f0b
+backport v9.2.x	Mark PR for automatic backport to v9.2.x	#D93F0B
+backport v9.3.x		#BF4500
+backport v9.4.x	Mark PR for automatic backport to v9.4.x	#d93f0b
+backport v9.5.x	Bot will automatically open backport PR	#0E8A16
+backport-failed	Failed to generate backport PR. Please resolve conflicts and create one manually.	#B60205
+beginner friendly		#c2e0c6
+blocked	Issue awaiting a resolution or consencus before moving on	#CF7E6F
+bot/close feature request	Bot will close issue with standard message	#b2ffcc
+bot/duplicate	Bot will close issue with standard duplicate message and add label type/duplicate	#b2ffcc
+bot/needs more info	Bot will request more info	#b2ffcc
+bot/no new info	Bot will automatically close issue with standard message	#b2ffcc
+bot/question	Bot will close with standard question comment and add label type/question	#b2ffcc
+breaking change	Relevant for changelog generation	#b60205
+bug-bash		#55C4E2
+champions	Issues or PRs for/done by Grafana Champions	#d4c5f9
+component/logql		#BF4A1A
+datasource/Alertmanager	Alertmanager data source	#85c92c
+datasource/Azure	Azure Monitor Datasource	#85c92c
+datasource/BigQuery		#85c92c
+datasource/CSV		#85c92c
+datasource/CloudWatch		#85c92c
+datasource/CloudWatch Logs	Issues related to Cloudwatch Logs in the Cloudwatch data source.	#85c92c
+datasource/Elasticsearch		#85c92c
+datasource/GitHub		#85c92c
+datasource/GoogleCloudMonitoring		#85c92c
+datasource/GoogleSheets		#85c92c
+datasource/Grafana		#85c92c
+datasource/Graphite		#85c92c
+datasource/InfluxDB		#85c92c
+datasource/JSON		#85c92c
+datasource/Jaeger		#85c92c
+datasource/Loki		#85c92c
+datasource/MSSQL	Microsoft SQL Server Data Source	#85c92c
+datasource/MySQL		#85c92c
+datasource/OpenSearch		#85c92c
+datasource/OpenTSDB		#85c92c
+datasource/Parca	Parca datasource	#85c92c
+datasource/Phlare	Phlare datasource	#85c92c
+datasource/Postgres		#85c92c
+datasource/Prometheus		#85c92c
+datasource/SiteWIse		#85c92c
+datasource/Splunk		#5CB924
+datasource/Tempo		#85c92c
+datasource/TestDataDB	Grafana's builtin test data source	#85c92c
+datasource/Timestream		#85c92c
+datasource/X-Ray		#85c92c
+datasource/Zabbix		#85c92c
+datasource/Zipkin		#85c92c
+datasource/grafana-pyroscope	Grafana pyroscope datasource (previously Phlare)	#85c92c
+dependencies	Pull requests that update a dependency file	#0366d6
+deploy-storybook		#7b33aa
+design-system	Issues related to the work of the Grafana Labs Design System	#FF8833
+design-system: component	Issues related to components of the Grafana Labs Design System	#1D76DB
+design-system: dev work	Dev only issues of the design system	#1D76DB
+design-system: documentation	Issues related to design system documentation	#1D76DB
+design-system: pattern	Issues related to patterns of the Grafana Labs Design System	#1D76DB
+discussion/consideration	Makes sense as a feature request we don't know when or whether we will do it yet	#DFBA0B
+discussion/resolved	Mark discussion as something we are going to implement and was moved to issues..	#C2E0C6
+dogfooding	Label to add to a bug found before release	#F35F92
+effort/large		#FEA73A
+effort/medium		#5A923E
+effort/none		#FBCA04
+effort/small		#a2f379
+effort/x-large		#E03B34
+enterprise-failed		#ededed
+enterprise-ko		#ededed
+enterprise-ok		#ededed
+feedback-wanted		#24DE1E
+gh-discussions	A label used for bulk-migration of FRs/ERs to discussions	#CBE7C5
+github_actions	Pull requests that update Github_actions code	#000000
+go	Pull requests that update Go code	#16e2e2
+good cross gops-fe	Share with a GOps Frontend dev on another focus	#B7CE0A
+good first issue	Good for newcomers	#7057ff
+hackathon-2022-08-highq	temp label for hackathon project	#83E5E3
+hacktoberfest	https://hacktoberfest.com/	#152347
+hacktoberfest-accepted		#6e76d3
+help wanted		#bfe5bf
+in progress		#ededed
+internal	for issues made by grafanistas	#E38D41
+interview-generated		#70A0ED
+issues#6845		#08F01E
+javascript	Pull requests that update Javascript code	#168700
+kata:alert-rule-creation		#c195c2
+kata:alerting-ease-of-use		#fb2b66
+kata:alerting-fundamentals		#721F7E
+kata:alerting-oncall-integration		#FE6B7C
+kata:am-cross-replica-comm		#5ae620
+kata:am_unify		#cc2de8
+kata:grafana-alerting-insights		#7c1948
+kata:grafana-core-dskit		#349190
+kata:incident-insights		#1c844e
+kata:incident_ga		#8e7907
+kata:multi-tenant-ruler		#433ed8
+kata:notification_errors		#005BC6
+kata:simplify-alert-rule-routing		#E885E5
+kata:slo-mvp		#79bfdc
+kata:state-history		#18AE2F
+kind/enhancement		#4e1b96
+levitate breaking change	A label indicating a breaking change and assigned by Levitate.	#D93F0B
+licensing		#B07100
+migrate/status-closed	Temporary label that can be deleted after 2022 Nov if it is forgotten about	#2A5046
+migrate/status-icebox	Temporary label that can be deleted after 2022 Nov	#11736D
+migrate/status-in-progress	Temporary label that can be deleted after 2022 November	#bfdadc
+migrate/status-in-review	Temporary label that can be deleted after 2022 Nov	#C5ED77
+migrate/status-new-issues	Temporary label that can be deleted after 2022 Nov	#D878A7
+migrate/status-product-backlog	Temporary label that can be deleted after 2022 Nov	#F58FA2
+migrate/status-sprint-backlog	Temporary label that can be deleted after 2022 Nov	#12D84A
+missing-labels		#ededed
+mob session	Something solved during a mob session	#5AD3BA
+mob-friendly	A good issue to be worked on by mob	#6744CD
+needs investigation	for unconfirmed bugs. use type/bug for confirmed bugs, even if they "need" more investigating	#1d76db
+needs more info	Issue needs more information, like query results, dashboard or panel json, grafana version etc	#1d76db
+needs refinement	The issue is confirmed but it needs prioritising and a better definition of the criteria	#CA7F9F
+needs research	for internal issues needing more research	#7A16F4
+needs-design-doc	Non-trivial issue that needs a design doc.	#ac04f9
+no stalebot	exempt from stalebot	#c5def5
+no-backport	Skip backport of PR	#b60205
+no-changelog	Skip including change in changelog/release notes	#b60205
+no-swagger-generation	pull request would have no impact on swagger	#227C9C
+not implemented		#fbca04
+old backport v7.2.x	Mark PR to be automatically backported to v7.2.x	#d93f0b
+old backport v7.3.x	Mark PR to be automatically backported to v7.3.x	#d93f0b
+old backport v7.4.x	Mark PR for automatic backport to v7.4.x	#d93f0b
+old backport v7.5.x	Mark PR for automatic backport to v7.5.x	#d93f0b
+old backport v8.0.x	Mark PR for automatic backport to v8.0.x	#d93f0b
+old backport v8.1.x	Mark PR for automatic backport to v8.1.x	#d93f0b
+old backport v8.2.x	Mark PR for automatic backport to v8.2.x	#d93f0b
+onboarding		#39ce86
+os/mac		#adcbed
+os/windows		#adcbed
+panel/inspect		#c7def8
+postmortem		#3D8232
+pr/awaiting-info	Awaiting external input	#2fc4a4
+pr/changes-needed		#eb6420
+pr/cla-not-signed		#eb6420
+pr/early-feedback	WIP state but looking for early feedback	#6919c4
+pr/external	This PR is from external contributor	#2fc4a4
+pr/needs-discussion	This PR needs a bigger discussion	#fbca04
+pr/needs-manual-testing	Before merge some help with manual testing & verification is requested	#c8f20c
+pr/needs-unit-tests	Unit tests are required before merge	#d12ba2
+pr/ok-to-merge	Can be merged at will	#0e8a16
+prio/awaiting-more-evidence	Lowest priority. Possibly useful, but not yet enough interest in it.	#fef2c0
+prio/critical	Highest priority. Must be actively worked on as someone's top priority right now.	#e11d21
+prio/customer-support		#335F09
+prio/future	Used by the dashboards squad to prioritise their backlog	#AF51C9
+prio/high	Must be staffed and worked on either currently, or very soon, ideally in time for the next release.	#eb6420
+prio/low	It's a good idea, but not scheduled for any release	#a2f379
+prio/medium	Important over the long term, but may not be staffed and/or may need multiple releases to complete.	#FBCA04
+prio/planned	Used by the dashboards squad to prioritise their backlog	#EE16D1
+prio/support-subscription		#d85fb2
+prio/unscheduled		#f2a9e2
+product-approved	Pull requests that are approved by product/managers and are allowed to be backported	#e99695
+proposal: accepted		#C2E0C6
+proposal: not pursuing		#CCCCCC
+proposal: open		#C2E0C6
+quality	Related to quality improvement.	#D93F0B
+random-label		#CADDFA
+stale	Issue with no recent activity	#0f5b70
+state/ux-mockups-needed		#70deef
+storage backend		#D766E2
+swagger-generation	pull request would have introduce swagger change	#D69D0B
+team/grafana-aws-datasources		#C2E0C6
+team/grafana-dashboards	Dashboards squad	#3D1ED3
+team/grafana-multitenancy		#F05F0D
+team/grafana-sharing		#0E8A16
+team/identity-access		#c2e0c6
+team/operator-experience		#3AB5A7
+timefix	needs additional review for tracking	#7278F0
+timepicker	The time picker is used on explore & dashboards	#E687C0
+triage/needs-confirmation	used for OSS triage rotation - reported issue needs to be reproduced	#C0EAE1
+triage/pending		#FEF2C0
+type/accessibility	Accessibility problem / enhancement	#dddddd
+type/angular-2-react	Angular -> React migration	#dddddd
+type/browser-compatibility	An issue with (usually) old browser	#0e8a16
+type/bug		#d73a4a
+type/build-packaging		#dddddd
+type/chore		#dddddd
+type/ci	Tasks related to Continuous Integration workflow	#dddddd
+type/cleanup		#dddddd
+type/codegen		#d4c5f9
+type/community		#a3f7e0
+type/debt	technical debt	#dddddd
+type/design		#C290E5
+type/designops		#99daef
+type/discussion	Issue to start a discussion	#dddddd
+type/docs		#dddddd
+type/duplicate		#dddddd
+type/e2e	Everything related to end-to-end tests	#bcb0f2
+type/epic	Issue made of smaller issues	#860385
+type/feature-request		#dddddd
+type/feature-toggle-enable		#8ADFC0
+type/feature-toggle-removal		#05DBC8
+type/performance		#dddddd
+type/poc		#f9d0c4
+type/project	Issues related to improving guidelines and documentation relation to the Grafana project	#31d895
+type/proposal		#dddddd
+type/question		#dddddd
+type/refactor		#dddddd
+type/regression		#d73a4a
+type/roadmap		#bfdadc
+type/tech		#dddddd
+type/ux		#dddddd
+type/ux/cuj		#F65686
+type/ux/research		#dddddd
+type/works-as-intended		#c5def5
+version/2		#f9debb
+version/3	for issues related to version 3	#933417
+version/4	for issues related to version 4	#f4909f
+version/5	for issues related to version 5	#8610e8
+version/6	for issues related to version 6	#3ac177
+version/7	for issues related to version 7	#eff489
+wcag/1.1.1	All non-text content that is presented to the user has a text alternative that serves the equivalent	#eeeeee
+wcag/1.3.1	Info and relationships can be programmatically determined or are available in text.	#eeeeee
+wcag/1.4.1	Color is not used as the only visual means of conveying information	#eeeeee
+wcag/1.4.10	Content can be presented with no loss to info or functionality and without two-dimensional scroll	#eeeeee
+wcag/1.4.11	UI and graphical objects have a color contrast ratio of at least 3:1	#eeeeee
+wcag/1.4.3	Text has a contrast ratio of at least 4.5:1	#eeeeee
+wcag/2.1.1	Keyboard accessible - All content is operable through a keyboard interface	#eeeeee
+wcag/2.1.2	Keyboard focus can be moved away from a component if it can be received	#eeeeee
+wcag/2.1.4	Keyboard character shortcuts use a modifier key and/or can be turned off/remapped	#eeeeee
+wcag/2.4.3	Focus order preserves meaning and operability	#eeeeee
+wcag/2.4.7	Keyboard focus indicator is visible	#eeeeee
+wcag/2.5.3	UI components visual labels matches their name labels	#eeeeee
+wcag/2.5.5	The size of the target for pointer inputs is at least 44 by 44 CSS pixels	#eeeeee
+wcag/3.1.6	A mechanism is available for identifying specific pronunciation of words	#eeeeee
+wcag/3.2.2	On input the 'context' for the user isn't changed without warning them.	#eeeeee
+wcag/3.3.2	Labels or instructions are provided when content requires user input.	#eeeeee
+wcag/4.1.1	HTML can be parsed correctly, no duplicate attributes, unique IDs	#eeeeee
+wcag/4.1.2	UI components name and role can be programmatically determined.	#eeeeee
+wcag2.2/2.4.11	Focus indicators are at least 2px thick and have a contrast of 3:1.	#C5DEF5
+wontfix		#34c10d
+🍐-programming	It's a good candidate for a pair programming session	#e6eb8b
