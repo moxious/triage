@@ -15,7 +15,7 @@ title=$(echo $json | jq -r .title)
 
 echo "Title: $title"
 origissue=https://github.com/grafana/grafana/issues/$number
-comment="Original issue: $origissue"
+comment="This issue is a test copy of an issue in another repo.  Original issue: $origissue"
 echo $comment
 
 echo $json | jq -r .body > /tmp/issuebody
