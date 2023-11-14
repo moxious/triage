@@ -20,6 +20,16 @@ Because it's in this repo, it will be auto-labeled.
 
 Using the gh CLI, you can even bulk/mass copy issues if you wish.
 
+Copy all the unlabeled issues that are recent:
+
+```
+for number in $(gh search issues -R grafana/grafana --no-label --json number | jq '.[].number') ; do
+   ./copy-issue.sh $number ; 
+done
+```
+
+Or just copy the 10 most recent issues.
+
 ```
 for number in $(gh issue list -L 10 --json number -R grafana/grafana | jq '.[].number') ; do
     ./copy-issue.sh $number ;
