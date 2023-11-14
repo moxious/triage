@@ -9,7 +9,7 @@ See `.github/workflows/new-issue.yaml` for the whole thing.
 
 ## How to Test
 
-Copy an issue from `grafana/grafana` to this repo by running this command (requires gh CLI installed and authenticated with a token)
+Copy an issue from `grafana/grafana` to this repo by running this command ([requires gh CLI installed and authenticated with a token](https://cli.github.com/manual/))
 
 ```
 ./copy-issue.sh 78106
