@@ -62,9 +62,6 @@ jobs:
         area/dataframe
         area/dataplane
         area/datasource
-        area/datasource/backend
-        area/datasource/frontend
-        area/datasource/proxy
         area/datatrails
         area/dataviz
         area/developer-portal
