@@ -7,6 +7,13 @@ This repo uses the [https://github.com/moxious/chatgpt-cli-action](moxious/chatg
 The only interesting code here is the invocation of a remote GitHub action with configuration.
 See `.github/workflows/new-issue.yaml` for the whole thing.
 
+## Example in Action
+
+All of the issues in this repo are copies of issues from `grafana/grafana`.  [This issue](https://github.com/moxious/triage/issues/103) is a good example.
+
+* [Here is where the bot added labels and a sample summary of the issue](https://github.com/moxious/triage/issues/103#issuecomment-1812801189).  This is an invocation of the `label_issue` workflow.
+* [Here is where the bot "elaborated the issue"](https://github.com/moxious/triage/issues/103#issuecomment-1812802220) or asked the user additional questions to provide more information to make the issue easier to understand / pursue.  This is an invocation of the `elaborate_issue` workflow.
+
 ## How to Test
 
 Copy an issue from `grafana/grafana` to this repo by running this command ([requires gh CLI installed and authenticated with a token](https://cli.github.com/manual/))
