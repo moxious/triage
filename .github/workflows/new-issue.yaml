@@ -217,7 +217,6 @@ jobs:
         type/accessibility
         type/angular-2-react
         type/browser-compatibility
-        type/bug
         type/build-packaging
         type/chore
         type/ci
