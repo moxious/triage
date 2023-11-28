@@ -12,6 +12,44 @@ jobs:
     secrets:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       GH_TOKEN: ${{ secrets.TOKEN }}  
+  project_bin_issue:
+    uses: moxious/chatgpt-cli-action/.github/workflows/comment-issue.yml@main
+    with:
+      url: ${{ github.event.issue.html_url }}
+      prompt: |
+        We want to determine which GitHub project the issue should be associated with, so the right team 
+        will see it. Please select for your comment which project is the best fit.  Choose only one project,
+        and you must choose from this list.  Pick the best available project.  If you are unsure, or there is
+        no good fit, include an explanation of why this is the best available fit.
+
+        Here are the available projects, with descriptions:
+          Backend platform project
+          Frontend Platform project
+          Plugins Platform
+          Grafana BI project
+          Grafana Metrics project
+          Traces & Profiling project
+          Explore project
+          DataViz project
+          AWS Datasources project
+          Partner datasources project
+          Grafana as Code
+          Identity and Access project
+          Grafana Operator Experience Squad
+          Alerting project
+          Hosted Grafana project
+          Release Engineering project
+          Community support squad project
+          Enterprise datasources project
+          Observability Logs Project
+          Dashboards
+          Sharing squad
+          GitHub project
+          Grafana App Platform project
+          OSS Big Tent GH Project
+    secrets:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GH_TOKEN: ${{ secrets.TOKEN }}  
   auto_triage_issue:
     uses: moxious/chatgpt-cli-action/.github/workflows/label-issue.yml@main
     with:
