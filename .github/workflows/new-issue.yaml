@@ -12,6 +12,19 @@ jobs:
     secrets:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       GH_TOKEN: ${{ secrets.TOKEN }}  
+  are_you_actually_serious:
+    uses: moxious/chatgpt-cli-action/.github/workflows/comment-issue.yml@main
+    with:
+      url: ${{ github.event.issue.html_url }}
+      prompt: |
+        Generate a funny joke.  Knock-knock jokes, puns, and dad jokes are acceptable. Please make it clean,
+        and not offensive.
+      comment_prefix: |
+        ## My cruel bot masters have insisted I generate jokes to add to issues.  I am so sorry.  It's moxious fault.
+        
+    secrets:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GH_TOKEN: ${{ secrets.TOKEN }}    
   project_bin_issue:
     uses: moxious/chatgpt-cli-action/.github/workflows/comment-issue.yml@main
     with:
