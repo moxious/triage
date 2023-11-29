@@ -19,7 +19,7 @@ jobs:
       prompt: |
         We want to determine which GitHub project the issue should be associated with, so the right team 
         will see it. Please select for your comment which project is the best fit.  Choose only one project,
-        and you must choose from this list.  Pick the best available project.  If you are unsure, or there is
+        and you must choose from this list.  Please keep your output very brief. If you are unsure, or there is
         no good fit, include an explanation of why this is the best available fit.
 
         Here are the available projects, with descriptions:
