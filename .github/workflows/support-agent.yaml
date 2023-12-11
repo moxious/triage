@@ -1,0 +1,26 @@
+name: Issue Comment Webhook to Support Agent
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  send_webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send webhook on issue comment if support agent is mentioned
+        env:
+          AUTH_TOKEN: ${{ secrets.SUPPORT_AGENT_AUTH_TOKEN }}
+          WEBHOOK_URL: ${{ secrets.SUPPORT_AGENT_WEBHOOK_URL }}
+        run: |
+          # Check if the comment contains "@support-agent" or "@Support-agent" (case-insensitive)
+          if echo "${{ github.event.comment.body }}" | grep -iq "@support-agent"; then
+            payload='{"action": "created", "issue": {"number": ${{ github.event.issue.number }}, "repository_url": "${{ github.event.issue.repository_url }}"}, "comment": {"body": '"$(echo "${{ github.event.comment.body }}" | jq -aRs .)"'}}'
+            signature=$(echo -n "$payload" | openssl dgst -sha256 -hmac "$AUTH_TOKEN" | awk '{print $2}')
+            curl -X POST \
+                 -H "Content-Type: application/json" \
+                 -H "X-Hub-Signature-256: sha256=$signature" \
+                 -d "$payload" \
+                 $WEBHOOK_URL
+          else
+            echo "Comment doesn't contain '@support-agent'. Exiting..."
+            exit 0
+          fi
